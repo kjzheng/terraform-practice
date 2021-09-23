@@ -1,15 +1,15 @@
 terraform {
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = "2.76.0"
     }
   }
 }
 
 provider "azurerm" {
-features {}
-skip_provider_registration = true
+  features {}
+  skip_provider_registration = true
 }
 
 # Create virtual network (a must for creating VM)
@@ -28,7 +28,7 @@ resource "azurerm_subnet" "tfsubnet" {
   name                 = "challenge_subnet"
   resource_group_name  = azurerm_virtual_network.TFNet.resource_group_name
   virtual_network_name = azurerm_virtual_network.TFNet.name
-  address_prefixes       = ["10.0.0.0/24"]
+  address_prefixes     = ["10.0.0.0/24"]
 }
 
 #Deploy Public IP
