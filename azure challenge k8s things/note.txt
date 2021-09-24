@@ -1,2 +1,0 @@
-az storage container create -n tfstate --account-name stor598525 --account-key 6GyEOcCXEiuryfLiUEXXJbvx5RLbi5xBXxSLIS2ylmJfGh+iKib+SipFB1/bzBJcqdvQJDOiMHvev22kLURqTA==
-terraform init -backend-config="storage_account_name=stor598525" -backend-config="container_name=tfstate" -backend-config="access_key=6GyEOcCXEiuryfLiUEXXJbvx5RLbi5xBXxSLIS2ylmJfGh+iKib+SipFB1/bzBJcqdvQJDOiMHvev22kLURqTA==" -backend-config="key=codelab.microsoft.tfstate"
