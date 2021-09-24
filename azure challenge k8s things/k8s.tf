@@ -1,7 +1,7 @@
-resource "azurerm_resource_group" "k8s" {
-    name     = var.resource_group_name
-    location = var.location
-}
+# resource "azurerm_resource_group" "k8s" {
+#     name     = var.resource_group_name
+#     location = var.location
+# }
 
 resource "random_id" "log_analytics_workspace_name_suffix" {
     byte_length = 8
